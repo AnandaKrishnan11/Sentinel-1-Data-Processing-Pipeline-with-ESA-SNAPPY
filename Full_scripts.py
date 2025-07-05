@@ -1,6 +1,6 @@
 #Syncing the python with snappy installation
 import sys
-sys.path.append(r'C:\Users\s1111191\.snap\snap-python')
+sys.path.append(r'C:\Users\sxxxxxxx\.snap\snap-python')
 
 #Major lib imports
 from esa_snappy import ProductIO
