@@ -45,7 +45,7 @@ sys.path.append(r'C:\Users\YOUR_USERNAME\.snap\snap-python')
 **How to Run**
 
    ```bash
-python main.py --input_path "xxxxxx.zip", output_path "yyyyyy.BEAM-DIMAP"
+python main.py --input_path "xxxxxx.zip" --output_path "yyyyyy.BEAM-DIMAP"
 
    ```
 
