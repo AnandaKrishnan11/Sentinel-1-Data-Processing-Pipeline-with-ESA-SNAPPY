@@ -2,7 +2,7 @@
 
 This repository provides a complete Sentinel-1 Synthetic Aperture Radar (SAR) preprocessing pipeline using ESA's SNAP and its Python API  SNAPPY. The pipeline includes operations such as orbital file correction, IW splitting, calibration, debursting, polarimetric matrix generation, speckle filtering, terrain correction, and polarimetric decomposition.
 
-🗂️ Pipeline Overview
+**Pipeline Overview
 
 The pipeline covers the following Sentinel-1 preprocessing steps:
 
@@ -17,7 +17,7 @@ The pipeline covers the following Sentinel-1 preprocessing steps:
 - Polarimetric Decomposition – Uses H-Alpha Dual Pol Decomposition.
 - Write Output – Saves the processed product in BEAM-DIMAP format.
 
-📁 Directory Structure
+**Directory Structure
 
 
    ```bash
@@ -28,3 +28,12 @@ The pipeline covers the following Sentinel-1 preprocessing steps:
 └── requirements.txt         # Python dependencies (to be created)
    ```
 
+**Getting Started
+🔧 Prerequisites
+SNAP Desktop
+
+Python 3.x
+
+ESA SNAPPY Python bindings
+
+Make sure snappy is properly configured and its path is added in the script:
