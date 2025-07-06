@@ -31,8 +31,7 @@ The pipeline covers the following Sentinel-1 preprocessing steps:
 │
 ├── main.py                  # Main script to execute the full pipeline
 ├── README.md                # Project documentation
-├──Processing_pipeline.png   # Workflow builder 
-└── requirements.txt         # Python dependencies 
+└──Processing_pipeline.png   # Workflow builder 
    ```
 ----
 
