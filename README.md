@@ -37,10 +37,10 @@ The pipeline covers the following Sentinel-1 preprocessing steps:
 
 Prerequisites
 - SNAP Desktop
-- Python 3.x
+- Python 2.7, 3.3 to 3.10
 - ESA SNAPPY Python bindings
   
-Make sure snappy is properly configured and its path is added in the script:
+Make sure snappy is properly configured and its path is added in the script: 
 
    ```bash
 sys.path.append(r'C:\Users\YOUR_USERNAME\.snap\snap-python')
@@ -63,5 +63,9 @@ Checkout the original repo for more info
    ```bash
 https://github.com/senbox-org/esa-snappy.git
 
+   ```
+For configuration details
+   ```bash
+[https://github.com/senbox-org/esa-snappy.git](https://senbox.atlassian.net/wiki/spaces/SNAP/pages/2499051521/Configure+Python+to+use+the+SNAP-Python+esa_snappy+interface+SNAP+version+10)
    ```
 
