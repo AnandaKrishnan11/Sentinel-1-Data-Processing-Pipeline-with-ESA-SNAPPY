@@ -19,8 +19,12 @@ The pipeline covers the following Sentinel-1 preprocessing steps:
 
 📁 Directory Structure
 
-Sentinel-1-Data-Processing-Pipeline-with-ESA-SNAPPY/
+
+   ```bash
+   Sentinel-1-Data-Processing-Pipeline-with-ESA-SNAPPY/
 │
 ├── main.py                  # Main script to execute the full pipeline
 ├── README.md                # Project documentation
 └── requirements.txt         # Python dependencies (to be created)
+   ```
+
