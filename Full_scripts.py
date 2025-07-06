@@ -8,6 +8,7 @@ from esa_snappy import HashMap
 import os, gc
 from esa_snappy import GPF
 from esa_snappy import jpy
+import argparse
 
 # Hashmap is used to give us access to all JAVA oerators
 HashMap = jpy.get_type('java.util.HashMap')
@@ -124,10 +125,17 @@ def write(product, filename):
     print('Product writing..')
     ProductIO.writeProduct(product, filename, "BEAM-DIMAP")  #"GeoTIFF"
 
-def execute():
+
+def argparse():
+    args = argparse.ArgumentParser()
+    args.add_argument("--input_path", help="input file path in zip format",type=str,required=True)
+    args.add_argument("--output_path", help="output file path", type=str,required=True)
+    return args.parse_args()
+    
+def execute(args):
 
     #Importing the product as p (We can use .zip or .dim files here)
-    p = ProductIO.readProduct(r'C:\SNAP\S1A_IW_SLC__1SDV_20210722T005513_20210722T005539_038883_049695_5707.zip')
+    p = ProductIO.readProduct(args.input_path)
 
     #Importing the functions
     a = apply_orbit_file(p)
@@ -137,11 +145,12 @@ def execute():
     e = Terrain_Correction(d)
     f = polarimetric_decomposition(e)
 
-    write(f,r'C:\SNAP\system_FINAL')
+    write(f,args.output_path)
     return None
 
     
 
 #Executing the main function
 if __name__ == "__main__":
-    execute()
+    args = argparse()
+    execute(args=args)
