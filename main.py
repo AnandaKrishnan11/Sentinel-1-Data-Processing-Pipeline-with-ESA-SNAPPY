@@ -132,7 +132,7 @@ def argparse():
     args.add_argument("--output_path", help="output file path", type=str,required=True)
     return args.parse_args()
     
-def execute(args):
+def main(args):
 
     #Importing the product as p (We can use .zip or .dim files here)
     p = ProductIO.readProduct(args.input_path)
@@ -153,4 +153,4 @@ def execute(args):
 #Executing the main function
 if __name__ == "__main__":
     args = argparse()
-    execute(args=args)
+    main(args=args)
