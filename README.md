@@ -42,3 +42,19 @@ sys.path.append(r'C:\Users\YOUR_USERNAME\.snap\snap-python')
 
    ```
 
+**How to Run**
+
+   ```bash
+python main.py --input_path "xxxxxx.zip", output_path "yyyyyy.BEAM-DIMAP"
+
+   ```
+
+**References**
+
+Checkout the original repo for more info
+
+   ```bash
+https://github.com/senbox-org/esa-snappy.git
+
+   ```
+
