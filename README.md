@@ -16,3 +16,11 @@ The pipeline covers the following Sentinel-1 preprocessing steps:
 - Terrain Correction – Geometrically corrects the image using WGS84 projection.
 - Polarimetric Decomposition – Uses H-Alpha Dual Pol Decomposition.
 - Write Output – Saves the processed product in BEAM-DIMAP format.
+
+📁 Directory Structure
+
+Sentinel-1-Data-Processing-Pipeline-with-ESA-SNAPPY/
+│
+├── main.py                  # Main script to execute the full pipeline
+├── README.md                # Project documentation
+└── requirements.txt         # Python dependencies (to be created)
