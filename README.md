@@ -8,6 +8,8 @@ This repository provides a complete Sentinel-1 Synthetic Aperture Radar (SAR) pr
 
 The pipeline covers the following Sentinel-1 preprocessing steps:
 
+![image alt](https://github.com/AnandaKrishnan11/Sentinel-1-Data-Processing-Pipeline-with-ESA-SNAPPY/blob/133c45d031e6861d7e210a27050e42229bc423a6/Processing_pipeline.png)
+
 - Apply Orbit File – Integrates precise orbital data.
 - TOPSAR Split – Splits the SLC product into IW1, IW2, and IW3 swaths.
 - Calibration – Radiometric calibration of VH and VV polarizations.
